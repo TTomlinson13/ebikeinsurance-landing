@@ -18,7 +18,7 @@ function App() {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-slate-800">E-Bike<span className="text-green-600">Insurance</span>.com</h1>
+            <h1 className="text-2xl font-bold text-slate-800">E-Bike<span className="text-green-600">Ins</span>.com</h1>
             <p className="text-xs text-slate-500">Florida E-Bike Coverage Specialists</p>
           </div>
           <div className="relative">
@@ -180,7 +180,7 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-slate-900 text-slate-400 py-8 px-4 text-center">
-        <h4 className="text-white font-bold text-xl mb-2">E-BikeInsurance.com</h4>
+        <h4 className="text-white font-bold text-xl mb-2">E-BikeIns.com</h4>
         <p className="text-sm">A Tomlinson & Co Agency · Florida Licensed Since 1966</p>
         <p className="text-xs mt-2">📞 800-616-1418 · <a href="mailto:henry@usicna.com" className="hover:text-white">henry@usicna.com</a></p>
         <p className="text-xs mt-4">© {new Date().getFullYear()} Tomlinson & Co Inc. All rights reserved.</p>
