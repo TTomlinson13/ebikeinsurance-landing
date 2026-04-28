@@ -39,6 +39,15 @@ function App() {
                     <div className="text-xs text-gray-500">2 mins • Auto-fill</div>
                   </div>
                 </a>
+                <a href="https://hoinsurance.wufoo.com/forms/mkvskv1159ehnz/" target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition border-b border-gray-100"
+                  onClick={() => setShowNavMenu(false)}>
+                  <span className="text-xl">📝</span>
+                  <div className="text-left">
+                    <div className="font-bold text-green-900 text-sm">Full Quote Form</div>
+                    <div className="text-xs text-gray-500">E-Bike details • 2 mins</div>
+                  </div>
+                </a>
                 <a href="tel:800-616-1418"
                   className="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition"
                   onClick={() => setShowNavMenu(false)}>
@@ -81,6 +90,12 @@ function App() {
               <span className="block text-xl mb-0.5">⚡</span>
               Quick Quote
               <span className="block text-xs font-normal opacity-75">2 mins • Auto-fill</span>
+            </a>
+            <a href="https://hoinsurance.wufoo.com/forms/mkvskv1159ehnz/" target="_blank" rel="noopener noreferrer"
+              className="bg-white hover:bg-green-50 text-green-700 border-2 border-green-600 px-8 py-4 rounded-xl font-bold text-lg transition shadow-lg text-center">
+              <span className="block text-xl mb-0.5">📝</span>
+              E-Bike Quote Form
+              <span className="block text-xs font-normal opacity-75">Tell us about your ride</span>
             </a>
             <a href="tel:800-616-1418"
               className="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition shadow-lg text-center">
@@ -153,6 +168,12 @@ function App() {
               <span className="block text-xl mb-0.5">⚡</span>
               Quick Quote
               <span className="block text-xs font-normal opacity-75">2 mins • Auto-fill</span>
+            </a>
+            <a href="https://hoinsurance.wufoo.com/forms/mkvskv1159ehnz/" target="_blank" rel="noopener noreferrer"
+              className="bg-white hover:bg-green-50 text-green-700 border-2 border-green-600 font-bold text-xl py-4 px-8 rounded-xl shadow-lg transition text-center">
+              <span className="block text-xl mb-0.5">📝</span>
+              E-Bike Quote Form
+              <span className="block text-xs font-normal opacity-75">Tell us about your ride</span>
             </a>
             <a href="tel:800-616-1418"
               className="bg-white hover:bg-green-50 text-green-700 font-bold text-xl py-4 px-8 rounded-xl shadow-lg transition text-center">
