@@ -203,7 +203,7 @@ function App() {
       <footer className="bg-slate-900 text-slate-400 py-8 px-4 text-center">
         <h4 className="text-white font-bold text-xl mb-2">E-BikeIns.com</h4>
         <p className="text-sm">A Tomlinson & Co Agency · Florida Licensed Since 1966</p>
-        <p className="text-xs mt-2">📞 800-616-1418 · <a href="mailto:info@tomlinsonandco.com" className="hover:text-white">info@tomlinsonandco.com</a></p>
+        <p className="text-xs mt-2">📞 800-616-1418 · <a href="mailto:quotes@ebikeins.com" className="hover:text-white">quotes@ebikeins.com</a></p>
         <p className="text-xs mt-4">© {new Date().getFullYear()} Tomlinson & Co Inc. All rights reserved.</p>
       </footer>
 
