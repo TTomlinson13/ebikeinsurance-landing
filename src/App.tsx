@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function App() {
   const [showNavMenu, setShowNavMenu] = useState(false)
@@ -21,44 +22,47 @@ function App() {
             <h1 className="text-2xl font-bold text-slate-800">E-Bike<span className="text-green-600">Ins</span>.com</h1>
             <p className="text-xs text-slate-500">Florida E-Bike Coverage Specialists</p>
           </div>
-          <div className="relative">
-            <button
-              onClick={() => setShowNavMenu(!showNavMenu)}
-              className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-semibold text-sm transition"
-            >
-              Get a Quote {showNavMenu ? '▲' : '▼'}
-            </button>
-            {showNavMenu && (
-              <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-2xl border border-green-100 overflow-hidden" style={{zIndex:9999}}>
-                <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition border-b border-gray-100"
-                  onClick={() => setShowNavMenu(false)}>
-                  <span className="text-xl">⚡</span>
-                  <div className="text-left">
-                    <div className="font-bold text-green-900 text-sm">Quick Quote</div>
-                    <div className="text-xs text-gray-500">2 mins • Auto-fill</div>
-                  </div>
-                </a>
-                <a href="https://hoinsurance.wufoo.com/forms/mkvskv1159ehnz/" target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition border-b border-gray-100"
-                  onClick={() => setShowNavMenu(false)}>
-                  <span className="text-xl">📝</span>
-                  <div className="text-left">
-                    <div className="font-bold text-green-900 text-sm">Full Quote Form</div>
-                    <div className="text-xs text-gray-500">E-Bike details • 2 mins</div>
-                  </div>
-                </a>
-                <a href="tel:800-616-1418"
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition"
-                  onClick={() => setShowNavMenu(false)}>
-                  <span className="text-xl">📞</span>
-                  <div className="text-left">
-                    <div className="font-bold text-green-900 text-sm">Call Us</div>
-                    <div className="text-xs text-gray-500">800-616-1418</div>
-                  </div>
-                </a>
-              </div>
-            )}
+          <div className="flex items-center gap-4">
+            <Link to="/blog" className="hidden sm:inline text-green-700 font-semibold hover:text-green-900 transition text-sm">Blog</Link>
+            <div className="relative">
+              <button
+                onClick={() => setShowNavMenu(!showNavMenu)}
+                className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-semibold text-sm transition"
+              >
+                Get a Quote {showNavMenu ? '▲' : '▼'}
+              </button>
+              {showNavMenu && (
+                <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-2xl border border-green-100 overflow-hidden" style={{zIndex:9999}}>
+                  <a href="https://app.usecanopy.com/c/tomlinson-and-co" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition border-b border-gray-100"
+                    onClick={() => setShowNavMenu(false)}>
+                    <span className="text-xl">⚡</span>
+                    <div className="text-left">
+                      <div className="font-bold text-green-900 text-sm">Quick Quote</div>
+                      <div className="text-xs text-gray-500">2 mins • Auto-fill</div>
+                    </div>
+                  </a>
+                  <a href="https://hoinsurance.wufoo.com/forms/mkvskv1159ehnz/" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition border-b border-gray-100"
+                    onClick={() => setShowNavMenu(false)}>
+                    <span className="text-xl">📝</span>
+                    <div className="text-left">
+                      <div className="font-bold text-green-900 text-sm">Full Quote Form</div>
+                      <div className="text-xs text-gray-500">E-Bike details • 2 mins</div>
+                    </div>
+                  </a>
+                  <a href="tel:800-616-1418"
+                    className="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition"
+                    onClick={() => setShowNavMenu(false)}>
+                    <span className="text-xl">📞</span>
+                    <div className="text-left">
+                      <div className="font-bold text-green-900 text-sm">Call Us</div>
+                      <div className="text-xs text-gray-500">800-616-1418</div>
+                    </div>
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </header>
