@@ -204,6 +204,14 @@ function App() {
         <h4 className="text-white font-bold text-xl mb-2">E-BikeIns.com</h4>
         <p className="text-sm">A Tomlinson & Co Agency · Florida Licensed Since 1966</p>
         <p className="text-xs mt-2">📞 800-616-1418 · <a href="mailto:quotes@ebikeins.com" className="hover:text-white">quotes@ebikeins.com</a></p>
+        <div className="mt-6 border-t border-slate-700 pt-5">
+          <p className="text-xs text-slate-500 mb-3 uppercase tracking-wider">Also from Tomlinson &amp; Co</p>
+          <div className="flex flex-wrap justify-center gap-4 text-xs">
+            <a href="https://tomlinsonandco.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition underline">Tomlinson &amp; Co (Parent Agency)</a>
+            <a href="https://hoinsurance.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition underline">Florida Home Insurance</a>
+            <a href="https://floridauto.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition underline">Florida Auto Insurance</a>
+          </div>
+        </div>
         <p className="text-xs mt-4">© {new Date().getFullYear()} Tomlinson & Co Inc. All rights reserved.</p>
       </footer>
 
