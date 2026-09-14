@@ -189,6 +189,50 @@ function App() {
         </div>
       </section>
 
+      {/* FAQ — E-Bike Classes */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-3xl font-bold text-center text-slate-800 mb-4">E-Bike Class FAQs</h3>
+          <p className="text-center text-slate-500 mb-10">Common questions about Florida's three e-bike classes and how they affect your coverage.</p>
+          <div className="space-y-4">
+            {[
+              {
+                q: "What are the three classes of e-bikes in Florida?",
+                a: <>Florida law (§ 316.003) recognizes three, all with working pedals and a motor under 750 watts. <strong>Class 1</strong> is pedal-assist only and the motor stops helping at 20 mph. <strong>Class 2</strong> adds a throttle, so the motor can move the bike without pedaling, also up to 20 mph. <strong>Class 3</strong> is pedal-assist only up to 28 mph and must have a speedometer.</>,
+              },
+              {
+                q: "Which class is most important to insure?",
+                a: <>Class 3. At 28 mph it's the fastest and some carriers treat it more like a moped, so coverage terms and price vary the most. A Class 2's throttle also draws more scrutiny than a basic Class 1 — but we write all three.</>,
+              },
+              {
+                q: "Does my e-bike's class affect my coverage or rate?",
+                a: <>It can. Carriers look at top assisted speed and whether the bike has a throttle when they judge liability risk, so a Class 3 often rates differently than a Class 1. Tell us the class when you request a quote and we'll match the right policy.</>,
+              },
+              {
+                q: "How do I tell which class my e-bike is?",
+                a: <>Most e-bikes carry a manufacturer label listing the class and top assisted speed. Quick rule: a top speed of 20 mph means Class 1 (no throttle) or Class 2 (throttle); 28 mph with a speedometer means Class 3. Not sure? Send us the make and model and we'll confirm.</>,
+              },
+              {
+                q: "Do I need a license, registration, or insurance for an e-bike in Florida?",
+                a: <>No. Florida gives all three classes the same rights and duties as a regular bicycle — no driver's license, no registration, and no state-required insurance. But the state not requiring coverage doesn't mean you're protected: theft, liability, and battery damage are still on you, and that's exactly what an e-bike policy covers.</>,
+              },
+              {
+                q: "Where can I ride, and are there age or helmet rules?",
+                a: <>All three classes can go where bicycles go — roads, bike lanes, and shared-use paths — and Class 3's path access is allowed at the state level. Florida sets no statewide minimum riding age, but local governments can add age or where-you-ride rules, so check your city or county. Riders under 16 must wear a helmet.</>,
+              },
+            ].map((item, i) => (
+              <details key={i} className="group bg-slate-50 border border-slate-200 rounded-xl p-5">
+                <summary className="flex justify-between items-center gap-4 cursor-pointer font-semibold text-slate-800 list-none [&::-webkit-details-marker]:hidden">
+                  {item.q}
+                  <span className="text-green-600 text-2xl leading-none transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="text-slate-600 mt-3 text-sm leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Quote Form */}
       <section className="py-16 px-4 bg-green-600 text-white">
         <div className="max-w-3xl mx-auto text-center">
