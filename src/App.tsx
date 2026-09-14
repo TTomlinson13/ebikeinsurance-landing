@@ -173,17 +173,17 @@ function App() {
             <div className="bg-slate-700 p-6 rounded-xl">
               <div className="text-green-400 text-xl font-bold mb-2">Class 1</div>
               <h4 className="font-bold text-lg mb-2">Pedal Assist</h4>
-              <p className="text-slate-300 text-sm">Motor assists while pedaling. Max 20 mph. Treated like a bicycle in most Florida counties.</p>
+              <p className="text-slate-300 text-sm">Motor helps only while you pedal and cuts off at 20 mph — no throttle. Florida treats a Class 1 e-bike like a regular bicycle, but your homeowners policy still won't cover theft or a liability claim.</p>
             </div>
             <div className="bg-slate-700 p-6 rounded-xl">
               <div className="text-yellow-400 text-xl font-bold mb-2">Class 2</div>
               <h4 className="font-bold text-lg mb-2">Throttle Assist</h4>
-              <p className="text-slate-300 text-sm">Has a throttle — no pedaling required. Max 20 mph. Popular for commuters and delivery riders.</p>
+              <p className="text-slate-300 text-sm">Has a throttle, so the motor can move the bike without pedaling, up to 20 mph. Popular with commuters and delivery riders — and a prime target for theft, which makes real coverage essential.</p>
             </div>
             <div className="bg-slate-700 p-6 rounded-xl border-2 border-orange-400">
               <div className="text-orange-400 text-xl font-bold mb-2">Class 3 ⚡</div>
               <h4 className="font-bold text-lg mb-2">Speed Pedelec</h4>
-              <p className="text-slate-300 text-sm">Up to 28 mph. Most powerful class — and most important to insure. Often treated like a moped by carriers.</p>
+              <p className="text-slate-300 text-sm">Pedal-assist only (no throttle) up to 28 mph, and Florida law requires a speedometer. The fastest, most powerful class — carriers scrutinize it hardest and may rate it like a moped, so the right policy matters most here.</p>
             </div>
           </div>
         </div>
