@@ -1,9 +1,11 @@
 {
-  "name": "easycommercialinsurance-landing",
+  "name": "ebikeinsurance-landing",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "sitemap": "node scripts/sitemap.mjs",
+    "prebuild": "node scripts/sitemap.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },
